@@ -19,6 +19,11 @@ Financial fraud detection presents a unique machine learning challenge due to ex
 
 The project goes beyond just a Jupyter Notebook model by deploying the model as a highly scalable **FastAPI** backend and an interactive **Streamlit** frontend, entirely containerized with **Docker Compose**.
 
+## ⚠️ Dataset & Deployment Note
+The initial XGBoost classification model was trained and evaluated locally on the full **284K Kaggle Credit Card Fraud dataset**, achieving an F1-score of 0.95. 
+
+However, to accommodate GitHub's file size limits and the memory constraints of Render's free tier for containerized applications, this repository and the live FastAPI endpoint utilize a representative **10,000-row subset** (`credit_card_fraud_10k.csv`). This ensures the API remains lightweight and can return fraud probabilities and SHAP explainability values in under 50ms.
+
 ## 🏗️ Architecture
 
 The application is built using a modern microservices architecture:
