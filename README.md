@@ -1,4 +1,4 @@
-# 🛡️ Real-Time Fintech Fraud Detection Engine
+# 🛡️ Real-Time Credit Card Fraud Detection System
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg)
